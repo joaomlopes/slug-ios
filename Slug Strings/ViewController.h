@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *txtStringToConvert;
+@property (weak, nonatomic) IBOutlet UILabel *lblSlugURL;
+
+- (IBAction)convertStringToSlug:(id)sender;
 
 @end
 

@@ -13,6 +13,7 @@
 		A4E824761C57F0DE0060074B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E824741C57F0DE0060074B /* Main.storyboard */; };
 		A4E824781C57F0DE0060074B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E824771C57F0DE0060074B /* Assets.xcassets */; };
 		A4E8247B1C57F0DE0060074B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E824791C57F0DE0060074B /* LaunchScreen.storyboard */; };
+		A4E824851C57F1310060074B /* JLSlug.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E824841C57F1310060074B /* JLSlug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A4E824771C57F0DE0060074B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E8247A1C57F0DE0060074B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E8247C1C57F0DE0060074B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E824831C57F1310060074B /* JLSlug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLSlug.h; path = JLSlug/JLSlug.h; sourceTree = "<group>"; };
+		A4E824841C57F1310060074B /* JLSlug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLSlug.m; path = JLSlug/JLSlug.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		A4E8246A1C57F0DE0060074B /* Slug Strings */ = {
 			isa = PBXGroup;
 			children = (
+				A4E824821C57F0F70060074B /* JLSlug */,
 				A4E8246E1C57F0DE0060074B /* AppDelegate.h */,
 				A4E8246F1C57F0DE0060074B /* AppDelegate.m */,
 				A4E824711C57F0DE0060074B /* ViewController.h */,
@@ -77,6 +81,15 @@
 				A4E8246C1C57F0DE0060074B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4E824821C57F0F70060074B /* JLSlug */ = {
+			isa = PBXGroup;
+			children = (
+				A4E824831C57F1310060074B /* JLSlug.h */,
+				A4E824841C57F1310060074B /* JLSlug.m */,
+			);
+			name = JLSlug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E824851C57F1310060074B /* JLSlug.m in Sources */,
 				A4E824731C57F0DE0060074B /* ViewController.m in Sources */,
 				A4E824701C57F0DE0060074B /* AppDelegate.m in Sources */,
 				A4E8246D1C57F0DE0060074B /* main.m in Sources */,
@@ -267,6 +281,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.sklfsm.Slug-Strings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,6 +293,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.sklfsm.Slug-Strings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
